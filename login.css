@@ -1,0 +1,212 @@
+@font-face {
+    font-family: ABI;
+    src: url(fonts/Abi\ Variable.ttf);
+}
+@font-face {
+    font-family: VAZIR;
+    src: url(fonts/Vazir/Vazir-Bold-FD.ttf);
+}
+:root{
+    --bodyBG : rgb(255, 255, 255);
+    --formBG : rgb(255,255,255,0.4);
+    --from-shadow : rgb(116, 0, 224,0.0); 
+    --form-border-color:rgb(181, 181, 181,0.6);
+    --form-fields : rgb(203, 203, 203,0.2);
+    --form-blur : blur(10px);
+    --formBG-element : url(assets/formBG-light.png);
+    --title-color : blueviolet;
+    --input-placeholder:gray;
+    --menuBG : white;
+    --menu-text:blueviolet;
+}
+body{
+    background-color:var(--bodyBG) ;
+    background-image: var(--formBG-element);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    transition: 1s;
+}
+.modal{
+    width: 260px;
+    height: 90px;
+    border: solid 1px rgb(201, 201, 201);
+    border-top: solid 6px rgb(90, 0, 110);
+    border-radius: 12px;
+    border-bottom-right-radius: 0px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    font-family: VAZIR;
+    font-size: 14px;
+    color: rgb(66, 0, 63);
+    visibility: hidden;
+    transform: translateX(120%);
+    transition: all 0.4s ease;
+}
+
+.modal.active{
+  opacity: 1;
+  background-color: white;
+  visibility: visible;
+  transform: translateX(0px);
+}
+.menu-bar{
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+    top: 40px;
+    left: 30px;
+    border: solid 1px rgb(0,0,0,0.1);
+    box-shadow: 0px 0px 8px rgb(0,0,0,0.1);
+    border-radius: 38px;
+    font-family: ABI;
+    background-color: var(--menuBG);
+    color: var(--menu-text);
+    cursor: pointer;
+}
+.them-icon path{
+   fill:  var(--menu-text) ;
+}
+form{
+    width: 430px;
+    height: 620px;
+    background-color:var(--formBG);
+    backdrop-filter:var(--form-blur);
+    border: 1px solid var(--form-border-color);
+    box-shadow: 0px 0px 44px var(--from-shadow);
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 1;
+    transition: all 1s ease;
+    translate: translateX(120%);
+    animation: floating 3s ease-in-out infinite;
+
+}
+form.non-active{
+    translate: translateX(0);
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+@keyframes floating {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+.main_fields{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: 1s;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition:all 1s;
+}
+.title h1{
+    font-family: VAZIR;
+    color: var(--title-color);
+    transition:all 1s;
+}
+h5{
+    font-family: ABI;
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.fields{
+    width: 68%;
+    height: 60px;
+    border-radius: 60px;
+    background-color: var(--form-fields);
+    backdrop-filter: blur(-10px);
+    border: solid 1px rgb(205, 205, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+    transition:  0.7s ease-in-out;
+    opacity: 1;
+    translate: translateX(120%);
+    transform: scale(1);
+}
+.fields.delete{
+  display: none;
+  translate: translateX(0) ;
+  /* transform: scale(0.9); 
+  height: 0;           
+  margin: 0;
+  visibility: hidden;       */
+  overflow: hidden;
+}
+.fields input{
+    width: 90%;
+    height: 60px;
+    border: none;
+    font-family: ABI;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: transparent;
+    transition: 1s;
+}
+.fields input:focus{
+    outline: none;
+    
+}
+.fields input::placeholder{
+    color: var(--input-placeholder);
+}
+.fields input:focus::placeholder{
+    color: transparent;
+}
+.btn{
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    font-family: ABI;
+    color: white;
+    border-radius:60px;
+    border: none;
+    background-color: rgb(137, 43, 225,0.9);
+    cursor: pointer;
+    transition: all 1s;
+    
+}
+#sign_up{
+    display: none;
+}
+#sign_in_button{
+    display: none;
+}
