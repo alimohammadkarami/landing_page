@@ -1,4 +1,4 @@
-# CourseHub - Online Learning Platform Landing Page
+# hamyar man - Online Learning Platform Landing Page
 
 A clean, modern landing page
 
@@ -18,9 +18,11 @@ Perfect as a starting point for a full course marketplace, learning management s
 
 ## 📸 Screenshots
 **Landing Page**  
+
 <img src="screenshots/landing.png" width="800">
 
 **Sign Up / Login Page**  
+
 <img src="screenshots/login.png" width="800">
 
 
