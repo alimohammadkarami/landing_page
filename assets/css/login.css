@@ -1,10 +1,12 @@
 @font-face {
     font-family: ABI;
-    src: url(fonts/Abi\ Variable.ttf);
+    src: url(../../fonts/Abi\ Variable.ttf);
+    font-weight: 400;
 }
 @font-face {
     font-family: VAZIR;
-    src: url(fonts/Vazir/Vazir-Bold-FD.ttf);
+    src: url(../../fonts/Vazir/Vazir-Medium-FD.ttf);
+    font-weight: 200;
 }
 :root{
     --bodyBG : rgb(255, 255, 255);
@@ -13,7 +15,7 @@
     --form-border-color:rgb(181, 181, 181,0.6);
     --form-fields : rgb(203, 203, 203,0.2);
     --form-blur : blur(10px);
-    --formBG-element : url(assets/formBG-light.png);
+    --formBG-element : url(../icons/formBG-light.png);
     --title-color : blueviolet;
     --input-placeholder:gray;
     --menuBG : white;

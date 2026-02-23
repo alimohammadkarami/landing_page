@@ -29,22 +29,22 @@ const classes =[
   {
     title:"یوگا برای آرامش ذهن ",
     info:"مربی : سارا محمدی &#183; قیمت : 390,000  تومان / ماه ",
-    pic: "assets/exercise.svg"
+    pic: "assets/icons/exercise.svg"
   },
   {
     title:"برنامه نویسی پایتون",
     info:"مربی : محمد سهرابیان  &#183; قیمت : 980,000  تومان / ماه ",
-    pic: "assets/codding.svg"
+    pic: "assets/icons/codding.svg"
   },
   {
     title:"تحلیل تکنیکال ",
     info:"مربی : معین صادقی &#183; قیمت : 750,000  تومان / ماه ",
-    pic: "assets/technical.svg"
+    pic: "assets/icons/technical.svg"
   },
   {
     title:"آشپزی",
     info:"مربی :فاطمه کیانی &#183; قیمت : 530,000  تومان / ماه ",
-    pic: "assets/cooking.svg"
+    pic: "assets/icons/cooking.svg"
   }
 ]
 next_class.addEventListener("click",()=>{

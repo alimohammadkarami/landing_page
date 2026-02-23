@@ -1,16 +1,16 @@
 @font-face {
     font-family: ABI;
-    src: url(fonts/Abi\ Variable.ttf);
+    src: url(../../fonts/Abi\ Variable.ttf);
     font-weight: 400;
 }
 @font-face {
     font-family: VAZIR;
-    src: url(fonts/Vazir/Vazir-Black-FD.ttf);
+    src: url(../../fonts/Vazir/Vazir-Medium-FD.ttf);
     font-weight: 200;
 }
 @font-face {
     font-family: VAZIR1;
-    src: url(fonts/Vazir/Vazir-Light-FD.ttf);
+    src: url(../../fonts/Vazir/Vazir-Medium-FD.ttf);
     font-weight: 200;
 }
 :root{
